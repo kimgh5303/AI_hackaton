@@ -1,4 +1,4 @@
-인공지능 수업 AI Hackaton
+AI cifar - 인공지능 수업 AI Hackaton
 
 <br>
 

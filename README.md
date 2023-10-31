@@ -15,8 +15,8 @@ CNN + RNN을 결합한 모델로 Cifar-100 데이터셋 학습 정확도 올리�
 ## 결과
 
 ### CNN 모델 구조
-| 입력층 | Conv1 | maxpooling | drop out | Conv2 | drop out | Conv3 | maxpooling | drop out | Conv4 |
-| -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+| 입력층 | Conv1 | maxpooling | drop out | Conv2 | maxpooling |drop out | Conv3 | maxpooling | drop out | Conv4 |
+| -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
 | 32X32 | 3X3X128 | | 0.2 | 3X3X256 | | 0.25 | 3X3X512 | | 0.6 | 3X3X16 |
 
 ### RNN 모델 구조
@@ -40,4 +40,4 @@ CNN + RNN을 결합한 모델로 Cifar-100 데이터셋 학습 정확도 올리�
 <br>
   
 ## 특이사항
-이미지 분류 모델에서 잘 안쓰이는 RNN을 추가하는 제약조건 때문에 accuracy가 잘 올라가지 않았습니다. 100개의 클래스에 각 600장 이미지가 있는 데이터셋입니다.
+이미지 분류 모델에서 잘 안쓰이는 RNN을 추가하는 제약조건 때문에 accuracy가 잘 올라가지 않았습니다. 데이터셋은 100개의 클래스에 각 600장 이미지가 있고 기존 수업에서 배웠던 Cifar-10 모델 확장버전인 Cifar-100데이터셋입니다.
